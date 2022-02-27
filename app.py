@@ -1,18 +1,21 @@
+import os
+import dotenv
 from flask import Flask, render_template
-from database import Database
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+
+dotenv.load_dotenv()
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+
+from models import *
 
 @app.route("/")
 def hello():
-    db = Database()
-    connection = db.connect_to_database()
-    cursor = connection.cursor()
-    books = cursor.execute('SELECT * from books;')
-    connection.commit() 
-    cursor.close()
-    connection.close()
-    return render_template("index.html", books=books)
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run()
