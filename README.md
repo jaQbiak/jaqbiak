@@ -1,3 +1,3 @@
 # Simple Flask CMS
 
-Hosted on Hiroku, using Hiroku Postgres database
+Hosted on Heroku, using Heroku Postgres database
