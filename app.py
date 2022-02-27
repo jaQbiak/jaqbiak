@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "<h1>Patryk Jakubiak 😈</h1>"
+    return render_template("index.jinja")
