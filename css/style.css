@@ -1,0 +1,148 @@
+body {
+  margin: 0; 
+  padding: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Press Start 2P", system-ui;
+}
+
+#container {
+  width: 60%;
+  margin: auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+#baner {
+  font-size: clamp(3rem, 8vw, 10rem);
+  color: #31157d;
+  text-align: center;
+  margin-top: 3rem;
+  animation: pulse 2s infinite ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: clamp(1.2rem, 2.5vw, 3rem);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#menu a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  color: inherit;
+  background-color: #31157d;
+  transition: transform 0.4s ease;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+#menu a:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(7deg);
+}
+
+#content {
+  margin-top: 5rem;
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+}
+
+table {
+  margin: auto;
+  border: 0.5rem solid #31157d;
+  border-collapse: collapse;
+  text-align: center;
+  width: 90%;
+}
+
+tr, td {
+  padding: 1rem;
+  border: 0.3rem solid #31157d;
+  border-collapse: collapse;
+  line-height: 1.1;
+}
+
+img {
+  width: clamp(5rem, 80%, 40rem);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#footer {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  background-color: #31157d;
+  padding: 1rem;
+}
+
+#footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#footer a:hover {
+  cursor: pointer;
+}
+
+#easter-egg:hover {
+  cursor: pointer;
+}
+
+.mirror {
+    display: inline-block;
+    animation: mirrorFlip 1s infinite alternate ease-in-out;
+  }
+
+@keyframes mirrorFlip {
+  0%   { transform: scaleX(1); }
+  100% { transform: scaleX(-1); }
+}
+
+@media (max-width: 600px) {
+  #container {
+      width: 90%;
+      padding: 0 1rem;
+  }
+  #baner {
+    font-size: clamp(2.8rem, 6vw, 6rem);
+  }
+  #menu {
+    font-size: clamp(1rem, 3vw, 2rem);
+  }
+  #content {
+    font-size: clamp(0.4rem, 2vw, 1.2rem);
+  }
+  #footer {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+  }
+}

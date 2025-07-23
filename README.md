@@ -1,1 +1,1 @@
-# My Homepage 👾
+# Stronka domowa 👾
