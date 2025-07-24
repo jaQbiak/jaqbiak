@@ -49,7 +49,7 @@ body {
   -ms-user-select: none;
 }
 
-#menu a {
+#menu a, span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -63,9 +63,16 @@ body {
   box-sizing: border-box;
 }
 
-#menu a:hover {
+#menu a:hover, span:hover {
   cursor: pointer;
   transform: scale(1.1) rotate(7deg);
+}
+
+.active {
+  background-color: #ffffff !important; 
+  color: #31157d !important; 
+  transform: scale(1.1) rotate(7deg); 
+  cursor: not-allowed !important;
 }
 
 #content {
@@ -93,6 +100,7 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
+  margin-bottom: 0.5rem;
 }
 
 #footer {
@@ -101,6 +109,7 @@ img {
   margin-top: 5rem;
   margin-bottom: 5rem;
   text-align: center;
+  line-height: 1.5;
   background-color: #31157d;
   padding: 1rem;
 }
@@ -143,6 +152,35 @@ img {
     font-size: clamp(0.4rem, 2vw, 1.2rem);
   }
   #footer {
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(0.5rem, 2vw, 1.2rem);
   }
+}
+
+#back {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+  text-decoration: None;
+  color: #ffffff;
+  background-color: #31157d;
+  transition: transform 0.4s ease;
+}
+
+#back:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(7deg);
+}
+
+a {
+  text-decoration: None;
+  color: #ffffff;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+#first_post {
+  display: inline-block;
+  animation: pulse 2s infinite ease-in-out;
 }

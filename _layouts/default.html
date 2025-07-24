@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="_assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="_assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="_assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jaqbiak</title>
+  </head>
+  <body>
+    <div id="container">
+
+        <header>
+            <div id="baner">jaqbiak</div>
+            <div id="menu">
+              {% if page.nav_active == 'about' %}
+                <span class="active">O MNIE</span>
+              {% else %}
+                <a href="/">O MNIE</a>
+              {% endif %}
+              {% if page.nav_active == 'equipment' %}
+                <span class="active">SPRZĘT</span>
+              {% else %}
+                <a href="/equipment">SPRZĘT</a>
+              {% endif %}
+              {% if page.nav_active == 'hobby' %}
+                <span class="active">HOBBY</span>
+              {% else %}
+                <a href="/hobby">HOBBY</a>
+              {% endif %}
+              {% if page.nav_active == 'posts' %}
+                <span class="active">POSTY</span>
+              {% else %}
+                <a href="/posts">POSTY</a>
+              {% endif %}
+            </div>
+        </header>
+
+        <main>
+            {{ content }}
+        </main>
+        
+        <footer>
+            <div id="footer">
+                <div id="easter-egg" class="mirror">©</div> 2025 Patryk Jakubiak, inspiracja: <a href="https://kaptur.network/" target="_blank">kaptur.network</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("easter-egg").addEventListener("click", function () {
+          alert("🎉 Znalazłeś Easter Egga 🎉 Pozdro dla całej Kapturowej Społeczności");
+        });
+      </script>
+  </body>
+</html>

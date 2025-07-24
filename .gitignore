@@ -1,2 +1,25 @@
+# folder z wygenerowaną stroną (np. dla GitHub Pages)
+_site/
+
+# tymczasowe dane i cache Jekylla
+.jekyll-cache/
+.jekyll-metadata
+
+# bundler
+.bundle/
+vendor/
+
+# logi i tymczasowe pliki
+*.log
+*.tmp
+*.swp
+
+# pliki systemowe (MacOS, edytory)
 .DS_Store
-images/.DS_Store
+Thumbs.db
+
+# node/npm (jeśli używasz np. Tailwind, npm-scripts itd.)
+node_modules/
+
+# VS Code (opcjonalnie)
+.vscode/
