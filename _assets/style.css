@@ -4,6 +4,7 @@ body {
   background-color: #000000;
   color: #ffffff;
   font-family: "Press Start 2P", system-ui;
+  overflow-x: hidden;
 }
 
 #container {
@@ -11,6 +12,8 @@ body {
   margin: auto;
   padding: 0 1rem;
   box-sizing: border-box;
+  z-index: 1;
+  position: relative;
 }
 
 #baner {
@@ -38,11 +41,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
   margin-top: 3rem;
   text-align: center;
-  font-size: clamp(1.2rem, 2.5vw, 3rem);
+  font-size: clamp(1.1rem, 1.5vw, 2.8rem);
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -54,7 +57,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 1rem;
   text-decoration: none;
   color: inherit;
   background-color: #31157d;
@@ -76,7 +79,7 @@ body {
 }
 
 #content {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   font-size: clamp(1rem, 1.8vw, 1.5rem);
 }
 
@@ -86,6 +89,9 @@ table {
   border-collapse: collapse;
   text-align: center;
   width: 90%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.01);
 }
 
 tr, td {
@@ -106,8 +112,8 @@ img {
 #footer {
   box-sizing: border-box;
   width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   text-align: center;
   line-height: 1.5;
   background-color: #31157d;
@@ -146,7 +152,7 @@ img {
     font-size: clamp(2.8rem, 6vw, 6rem);
   }
   #menu {
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1rem, 2vw, 1.8rem);
   }
   #content {
     font-size: clamp(0.4rem, 2vw, 1.2rem);
@@ -183,4 +189,27 @@ a:hover {
 #first_post {
   display: inline-block;
   animation: pulse 2s infinite ease-in-out;
+}
+
+.star-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  color: white;
+  font-family: monospace;
+  animation: twinkle 4s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
 }

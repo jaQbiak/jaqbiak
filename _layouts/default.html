@@ -12,6 +12,7 @@
     <title>jaqbiak</title>
   </head>
   <body>
+    <div class="star-background" id="stars"></div>
     <div id="container">
 
         <header>
@@ -55,6 +56,20 @@
         document.getElementById("easter-egg").addEventListener("click", function () {
           alert("🎉 Znalazłeś Easter Egga 🎉 Pozdro dla całej Kapturowej Społeczności");
         });
+
+        const numberOfStars = 200;
+        const background = document.querySelector('.star-background');
+
+        for (let i = 0; i < numberOfStars; i++) {
+          const star = document.createElement('div');
+          star.className = 'star';
+          star.textContent = '*';
+          star.style.top = Math.random() * 200 + 'vh';
+          star.style.left = Math.random() * 100 + 'vw';
+          star.style.fontSize = (Math.random() * 15 + 8) + 'px';
+          star.style.animationDuration = (Math.random() * 2 + 1) + 's';
+          background.appendChild(star);
+        }
       </script>
   </body>
 </html>
