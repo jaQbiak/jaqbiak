@@ -1,7 +1,7 @@
 ---
 layout: default
 date: 2025-07-24 14:00:00 +0200
-permalink: welcome
+permalink: first_post
 nav_active: posts
 ---
 
