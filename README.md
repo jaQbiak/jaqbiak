@@ -1,4 +1,4 @@
-# 👾 Moja strona Jekyll
+# 👾 jaqbiak
 
 To jest statyczna strona internetowa oparta na [Jekyll](https://jekyllrb.com/), hostowana na [GitHub Pages](https://pages.github.com/), znajdziejsz ją pod adresem [jaqbiak](https://jaqbiak.space)
 
