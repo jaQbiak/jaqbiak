@@ -16,22 +16,50 @@ nav_active: about
             <td>Praca</td><td>QA Engineer</td>
         </tr>
         <tr>
-            <td>Hobby</td><td>Technologia, Gry video, Pieczenie pizzy, Siatkówka, Rower (???)</td>
+            <td>Hobby</td>
+            <td>
+                Technologia
+                <br>Gry video
+                <br>Pieczenie pizzy
+                <br>Siatkówka
+                <br>Rower (???)
+            </td>
         </tr>
         <tr>
-            <td>Ulubione gry</td><td>Fable I, GTA San Andreas, Harry Potter II i III, Zelda BOTW i TOTK</td>
+            <td>Ulubione gry</td>
+            <td>
+                Fable I
+                <br>GTA San Andreas
+                <br>Harry Potter II i III
+                <br>Zelda BOTW i TOTK
+            </td>
         </tr>
         <tr>
             <td>Ulubione książki</td><td>Harry Potter</td>
         </tr>
         <tr>
-            <td>Ulubione płyty</td><td>Taco Hemingway - Marmur, Kendrick Lamar - good kid, m.A.A.d city</td>
+            <td>Ulubione płyty</td>
+            <td>
+                Taco Hemingway - Marmur
+                <br>Kendrick Lamar - good kid, m.A.A.d city
+            </td>
         </tr>
         <tr>
-            <td>Ulubione filmy</td><td>Who Am I, Lęk pierwotny</td>
+            <td>Ulubione filmy</td>
+            <td>
+                Who Am I
+                <br>Lęk pierwotny
+            </td>
         </tr>
         <tr>
-            <td>Ulubione seriale</td><td>Lost, Naruto, BoJack Horseman, Rick i Morty, Brooklyn 99</td>
+            <td>Ulubione seriale</td>
+            <td>
+                Lost
+                <br>Naruto
+                <br>BoJack Horseman
+                <br>Rick i Morty
+                <br>Brooklyn 99
+            </td>
         </tr>
     </table>
 </div>

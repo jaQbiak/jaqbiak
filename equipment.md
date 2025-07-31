@@ -25,7 +25,12 @@ nav_active: equipment
             <td>Kamera</td><td>DJI Action 2</td>
         </tr>
         <tr>
-            <td>Konsole</td><td>Xbox Series S, Nintendo Switch 2, PSP 3004</td>
+            <td>Konsole</td>
+            <td>
+                Xbox Series S
+                <br>Nintendo Switch 2
+                <br>PSP 3004
+            </td>
         </tr>
         <tr>
             <td>Rower</td><td>Trek Dual Sport 3 Gen 5</td>
