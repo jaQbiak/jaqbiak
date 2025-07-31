@@ -160,7 +160,7 @@ img {
       padding: 0 1rem;
   }
   #baner {
-    font-size: clamp(3.2rem, 10vw, 12rem);
+    font-size: clamp(2.8rem, 6vw, 6rem);
   }
   #menu {
     font-size: clamp(1rem, 2vw, 1.8rem);
