@@ -16,6 +16,13 @@ nav_active: about
             <td>Praca</td><td>QA Engineer</td>
         </tr>
         <tr>
+            <td>Linki</td>
+            <td>
+                <a href="https://github.com/jaQbiak" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@jaqbiak" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </td>
+        </tr>
+        <tr>
             <td>Hobby</td>
             <td>
                 Technologia
