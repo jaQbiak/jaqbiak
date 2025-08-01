@@ -54,10 +54,6 @@
     </div>
 
     <script>
-        document.getElementById("easter-egg").addEventListener("click", function () {
-          alert("🎉 Znalazłeś Easter Egga 🎉 Pozdro dla całej Kapturowej Społeczności");
-        });
-
         const numberOfStars = 200;
         const background = document.querySelector('.star-background');
 
@@ -71,6 +67,45 @@
           star.style.animationDuration = (Math.random() * 2 + 1) + 's';
           background.appendChild(star);
         }
-      </script>
+
+        document.getElementById("easter-egg").addEventListener("click", function () {
+          alert("🎉 Znalazłeś Easter Egga 🎉 Pozdro dla całej Kapturowej Społeczności");
+        });
+
+        (function() {
+          const konamiCode = [
+            "ArrowUp", "ArrowUp",
+            "ArrowDown", "ArrowDown",
+            "ArrowLeft", "ArrowRight",
+            "ArrowLeft", "ArrowRight",
+            "b", "a"
+          ];
+
+        let inputSequence = [];
+
+        window.addEventListener("keydown", function(e) {
+          inputSequence.push(e.key);
+          if (inputSequence.length > konamiCode.length) {
+            inputSequence.shift();
+          }
+
+          if (inputSequence.join("") === konamiCode.join("")) {
+            triggerKonamiEasterEgg();
+            inputSequence = [];
+          }
+        });
+
+        function triggerKonamiEasterEgg() {
+          alert("🎮 Konami Code Activated! 🎮");
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+          document.getElementById("baner").textContent = "contra";
+          document.getElementById("contra").play();
+        }
+      })();
+    </script>
+    <audio id="contra" src="_assets/sounds/contra.mp3" preload="auto"></audio>
   </body>
 </html>
