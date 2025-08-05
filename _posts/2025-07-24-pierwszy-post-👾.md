@@ -12,7 +12,7 @@ nav_active: posts
         </tr>
         <tr>
             <td colspan="2" style="padding: 1rem;">
-                Siema wszystkim. 
+                <h1>Siema wszystkim.</h1>
                 <br><br>@chudydredd co ty na to, żeby zrobić film z oceniania stronek widzów?
                 <br><br>Pozdro!
             </td>

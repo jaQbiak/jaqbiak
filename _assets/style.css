@@ -102,7 +102,7 @@ tr, td {
 }
 
 i {
-  font-size: clamp(1.5rem, 1.6vw, 2.1rem);
+  font-size: clamp(1rem, 1.3vw, 2rem);
   padding-left: 0.8rem;
   padding-right: 0.8rem;
 }
@@ -192,6 +192,10 @@ a:hover {
   cursor: pointer;
 }
 
+.posts:hover {
+  color: #31157d;
+}
+
 #first_post {
   display: inline-block;
   animation: pulse 2s infinite ease-in-out;
@@ -218,4 +222,17 @@ a:hover {
 @keyframes twinkle {
   0%, 100% { opacity: 0.2; }
   50% { opacity: 1; }
+}
+
+@keyframes slide-in-from-right {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slide-in-from-right 3.5s ease-out forwards;
 }

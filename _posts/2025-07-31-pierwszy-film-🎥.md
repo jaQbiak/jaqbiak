@@ -12,7 +12,7 @@ nav_active: posts
         </tr>
         <tr>
             <td colspan="2" style="padding: 1rem;">
-                Dzisiaj dodałem swój pierwszy film:
+                <h1>Dzisiaj dodałem swój pierwszy film:</h1>
                 <a href="https://youtube.com/shorts/1Y8Aj67y5Jo?si=S9s1MdPPc2DkeB-l" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 <a href="https://www.tiktok.com/@jaqbiak888/video/7533270535153667350" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
             </td>

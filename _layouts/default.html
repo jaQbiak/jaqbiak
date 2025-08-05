@@ -20,24 +20,24 @@
             <div id="baner">jaqbiak</div>
             <div id="menu">
               {% if page.nav_active == 'about' %}
-                <span class="active">O MNIE</span>
+                <span id="menu1" class="active">O MNIE</span>
               {% else %}
-                <a href="/">O MNIE</a>
+                <a id="menu1" href="/">O MNIE</a>
               {% endif %}
               {% if page.nav_active == 'equipment' %}
-                <span class="active">SPRZĘT</span>
+                <span id="menu2" class="active">SPRZĘT</span>
               {% else %}
-                <a href="/equipment">SPRZĘT</a>
+                <a id="menu2" href="/equipment">SPRZĘT</a>
               {% endif %}
               {% if page.nav_active == 'hobby' %}
-                <span class="active">HOBBY</span>
+                <span id="menu3" class="active">HOBBY</span>
               {% else %}
-                <a href="/hobby">HOBBY</a>
+                <a id="menu3" href="/hobby">HOBBY</a>
               {% endif %}
               {% if page.nav_active == 'posts' %}
-                <span class="active">POSTY</span>
+                <span id="menu4" class="active">POSTY</span>
               {% else %}
-                <a href="/posts">POSTY</a>
+                <a id="menu4" href="/posts">POSTY</a>
               {% endif %}
             </div>
         </header>
@@ -96,12 +96,16 @@
         });
 
         function triggerKonamiEasterEgg() {
-          alert("🎮 Konami Code Activated! 🎮");
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+          window.scrollTo({top: 0});
+          const container = document.getElementById("container");
+          if (container) {
+            container.classList.add("slide-in");
+          }
           document.getElementById("baner").textContent = "contra";
+          document.getElementById("menu1").textContent = "1 PLAYER";
+          document.getElementById("menu2").textContent = "2 PLAYERS";
+          document.getElementById("menu3").textContent = "KONAMI";
+          document.getElementById("menu4").textContent = "1988";
           document.getElementById("contra").play();
         }
       })();
