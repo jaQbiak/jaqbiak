@@ -20,6 +20,7 @@ nav_active: about
             <td>
                 <a href="https://github.com/jaQbiak" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.youtube.com/@jaqbiak" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@jaqbiak888" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
             </td>
         </tr>
         <tr>
