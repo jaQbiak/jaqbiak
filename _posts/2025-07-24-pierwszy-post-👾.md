@@ -8,11 +8,11 @@ nav_active: posts
 <div id="content">
     <table>
         <tr>
-            <td><a href="/posts" id="back">COFNIJ</a></td><td>Pierwszy post 👾</td>
+            <td><a href="/posts" id="back">COFNIJ</a></td><td><h2>Pierwszy post 👾</h2></td>
         </tr>
         <tr>
             <td colspan="2" style="padding: 1rem;">
-                <h1>Siema wszystkim.</h1>
+                Siema wszystkim!
                 <br><br>@chudydredd co ty na to, żeby zrobić film z oceniania stronek widzów?
                 <br><br>Pozdro!
             </td>
