@@ -106,7 +106,9 @@
           document.getElementById("menu2").textContent = "2 PLAYERS";
           document.getElementById("menu3").textContent = "KONAMI";
           document.getElementById("menu4").textContent = "1988";
-          document.getElementById("contra").play();
+          setTimeout(() => {
+            document.getElementById("contra").play();
+          }, 3500);
         }
       })();
     </script>
