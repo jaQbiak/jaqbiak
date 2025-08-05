@@ -14,7 +14,7 @@ nav_active: hobby
                 <figure>
                     <img src="_assets/images/pizza.jpeg" alt="Pizza">
                     <figcaption>Moja ostatnia pizza, mozarella, chorizo i mascarpone</figcaption>
-                    </figure>
+                </figure>
             </td>
         </tr>
         <tr>

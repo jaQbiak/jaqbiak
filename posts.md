@@ -5,11 +5,17 @@ nav_active: posts
 ---
 
 <div id="content">
-    <table>
-        {% for post in site.posts %}
+    {% for post in site.posts %}
+        <table>
             <tr>
-                <td>{{ post.date | date: "%Y-%m-%d %H:%M" }}</td><td><a class="posts" href="{{ post.url | relative_url }}" {% if forloop.first %}id="first_post"{% endif %}>{{ post.title }}</a></td>
+                <td>
+                    <h2>{{ post.title }}</h2>
+                    <small>{{ post.date | date: "%Y-%m-%d %H:%M" }}</small>
+                </td>
             </tr>
-        {% endfor %}
-    </table>
+            <tr>
+                <td>{{ post.content }}</td>
+            </tr>
+        </table>
+    {% endfor %}
 </div>
