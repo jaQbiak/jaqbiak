@@ -24,7 +24,7 @@ nav_active: about
             </td>
         </tr>
         <tr>
-            <td>Hobby</td>
+            <td>Zainteresowania</td>
             <td>
                 Technologia
                 <br>Gry video
