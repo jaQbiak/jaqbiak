@@ -40,6 +40,7 @@ nav_active: about
                 <br>GTA San Andreas
                 <br>Harry Potter II i III
                 <br>Zelda BOTW i TOTK
+                <br>Pokémon Fire Red
             </td>
         </tr>
         <tr>
